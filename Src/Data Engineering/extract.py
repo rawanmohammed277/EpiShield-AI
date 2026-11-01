@@ -1,37 +1,27 @@
-import pandas as pd
 from pathlib import Path
+import pandas as pd
 
-BASE_DIR = Path(__file__).resolve().parent.parent / "Data"
+SRC_DIR = Path(__file__).resolve().parent.parent
+DATA_DIR = SRC_DIR / "Data"
+
 def extract_data():
-
     files = {
-        "regioni": BASE_DIR / "regioni.csv",
-        "popolazione": BASE_DIR / "popolazione.csv",
-        "note": BASE_DIR / "note.csv",
-        "nazionale": BASE_DIR / "nazionale.csv",
+        "regioni": DATA_DIR / "regioni.csv",
+        "nazionale": DATA_DIR / "nazionale.csv",
+        "popolazione": DATA_DIR / "popolazione.csv",
+        "note": DATA_DIR / "note.csv"
     }
 
-    dataframes = {}
+    data = {}
 
-    for name, path in files.items():
+    for name, file_path in files.items():
+        df = pd.read_csv(file_path, dtype=str, keep_default_na=False)
+        data[name] = df
 
-        if not path.exists():
-            raise FileNotFoundError(f"File not found: {path}")
+        print(f"{name}: {df.shape[0]} rows, {df.shape[1]} columns")
 
-        df = pd.read_csv(path)
-
-        if df.empty:
-            raise ValueError(f"File is empty: {path}")
-
-        dataframes[name] = df
-
-        print(f"{name}: Loaded successfully")
-        print(f"Shape: {df.shape}")
-        print(f"Columns: {list(df.columns)}")
-        print("-" * 40)
-
-    return dataframes
+    return data
 
 
 if __name__ == "__main__":
-    data = extract_data()
+    extract_data()
