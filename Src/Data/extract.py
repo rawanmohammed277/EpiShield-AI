@@ -1,21 +1,25 @@
 
 import pandas as pd
-import os
+from pathlib import Path
+
 
 def extract_data():
 
+    # Get the directory containing this Python file
+    BASE_DIR = Path(__file__).resolve().parent
+
     files = {
-        "regioni": "data/regioni.csv",
-        "popolazione": "data/popolazione.csv",
-        "note": "data/note.csv",
-        "nazionale": "data/nazionale.csv"
+        "regioni": BASE_DIR / "regioni.csv",
+        "popolazione": BASE_DIR / "popolazione.csv",
+        "note": BASE_DIR / "note.csv",
+        "nazionale": BASE_DIR / "nazionale.csv"
     }
 
     dataframes = {}
 
     for name, path in files.items():
 
-        if not os.path.exists(path):
+        if not path.exists():
             raise FileNotFoundError(f"File not found: {path}")
 
         df = pd.read_csv(path)
