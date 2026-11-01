@@ -1,18 +1,14 @@
-
 import pandas as pd
 from pathlib import Path
 
-
+BASE_DIR = Path(__file__).resolve().parent.parent / "Data"
 def extract_data():
-
-    # Get the directory containing this Python file
-    BASE_DIR = Path(__file__).resolve().parent
 
     files = {
         "regioni": BASE_DIR / "regioni.csv",
         "popolazione": BASE_DIR / "popolazione.csv",
         "note": BASE_DIR / "note.csv",
-        "nazionale": BASE_DIR / "nazionale.csv"
+        "nazionale": BASE_DIR / "nazionale.csv",
     }
 
     dataframes = {}
