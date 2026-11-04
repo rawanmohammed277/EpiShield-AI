@@ -1,0 +1,22 @@
+﻿Region_Code,Region_Name,Region_Abbreviation,Latitude,Longitude,NUTS_1_Code,NUTS_1_Description,NUTS_2_Code
+1,Piemonte,PIE,,,ITC,,ITC1
+2,Valle d'Aosta,VDA,,,ITC,,ITC2
+3,Lombardia,LOM,,,ITC,,ITC4
+5,Veneto,VEN,,,ITH,,ITH3
+6,Friuli Venezia Giulia,FVG,,,ITH,,ITH4
+7,Liguria,LIG,,,ITC,,ITC3
+8,Emilia-Romagna,EMR,,,ITH,,ITH5
+9,Toscana,TOS,,,ITI,,ITI1
+10,Umbria,UMB,,,ITI,,ITI2
+11,Marche,MAR,,,ITI,,ITI3
+12,Lazio,LAZ,,,ITI,,ITI4
+13,Abruzzo,ABR,,,ITF,,ITF1
+14,Molise,MOL,,,ITF,,ITF2
+15,Campania,CAM,,,ITF,,ITF3
+16,Puglia,PUG,,,ITF,,ITF4
+17,Basilicata,BAS,,,ITF,,ITF5
+18,Calabria,CAL,,,ITF,,ITF6
+19,Sicilia,SIC,,,ITG,,ITG1
+20,Sardegna,SAR,,,ITG,,ITG2
+21,Bolzano,BOL,,,ITH,,ITH1
+22,Trento,TRE,,,ITH,,ITH2
