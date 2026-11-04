@@ -18,7 +18,7 @@ DATABASE_DIR = SRC_DIR / "Database"
 # IMPORTANT:
 # Keep False on Doaa's computer.
 # Set True ONLY on the teammate's computer where SQL Server exists.
-RUN_DATABASE_LOAD = False
+RUN_DATABASE_LOAD = True
 
 DATABASE_NAME = "EpiShieldDB"
 SCHEMA_NAME = "dbo"
@@ -560,6 +560,7 @@ def validate_sql_table_schema(
     print(f"dbo.{table_name}: SQL schema validated.")
 
 
+
 def check_database_readiness(connection, data):
 
     print_section("DATABASE READINESS CHECK")
@@ -576,16 +577,65 @@ def check_database_readiness(connection, data):
 
     print(f"Connected database: {database_name}")
 
+    # These are the columns that will ACTUALLY be inserted
+    # after surrogate key mapping.
+
+    sql_input_columns = {
+        "DimLocation": [
+            "Region_Code",
+            "Region_Name",
+            "Region_Abbreviation",
+            "Latitude",
+            "Longitude",
+            "NUTS_1_Code",
+            "NUTS_1_Description",
+            "NUTS_2_Code",
+        ],
+
+        "DimDate": [
+            "Date",
+        ],
+
+        "FactPopulation": [
+            "location_id",
+            "Age_Range",
+            "Total_Male",
+            "Total_Female",
+            "Total_Population",
+        ],
+
+        "FactNational": [
+            "date_id",
+            *NATIONAL_COLUMN_MAPPING.values()
+        ],
+
+        "FactRegional": [
+            "date_id",
+            "location_id",
+            *REGIONAL_COLUMN_MAPPING.values()
+        ],
+
+        "ReportNotes": [
+            "date_id",
+            "location_id",
+            "source_type",
+            "Note",
+        ],
+    }
+
     for data_name, table_name in TARGET_TABLES.items():
 
-        # Validate destination columns and nullability.
+        # Validate the final SQL columns, not the original CSV columns.
+        schema_check_df = pd.DataFrame(
+            columns=sql_input_columns[data_name]
+        )
+
         validate_sql_table_schema(
             connection,
             table_name,
-            data[data_name]
+            schema_check_df
         )
 
-        # One-time initial load only.
         row_count = connection.execute(
             text(
                 f"SELECT COUNT(*) FROM "
@@ -605,6 +655,7 @@ def check_database_readiness(connection, data):
         )
 
     print("\nDatabase readiness checks passed.")
+
 
 
 # ============================================================
@@ -1132,15 +1183,12 @@ def main():
         print_section("DATABASE LOAD SKIPPED")
 
         print(
-            "RUN_DATABASE_LOAD = False"
+            f"RUN_DATABASE_LOAD = {RUN_DATABASE_LOAD}"
         )
 
         print(
-            "To perform the actual database load, "
-            "run this project on the teammate's computer "
-            "after verifying the SQL Server schema and connection."
+            "Database loading is disabled."
         )
-
 
 if __name__ == "__main__":
     main()
