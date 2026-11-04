@@ -1,0 +1,5 @@
+Dataset,Rows,Columns,Duplicate Rows,Missing Values,Empty Strings
+Regional,37401,30,0,0,213705
+National,1781,24,0,0,10179
+Population,210,12,0,0,0
+Notes,1617,2,0,0,14
