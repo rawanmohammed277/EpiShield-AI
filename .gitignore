@@ -1,12 +1,8 @@
-<<<<<<< HEAD
-.venv/Scripts
-.venv
-=======
-
 .venv/
 __pycache__/
 *.py[cod]
 .ipynb_checkpoints/
 .env
+.env.*
+!.env.example
 .vscode/
->>>>>>> 3a541b6be99f84c17771d51b565ea2219ec46d66

@@ -20,7 +20,7 @@ DATABASE_DIR = SRC_DIR / "Database"
 # Set True ONLY on the teammate's computer where SQL Server exists.
 RUN_DATABASE_LOAD = True
 
-DATABASE_NAME = "EpiShieldDB"
+DATABASE_NAME = "EpiShieldDB_Test"
 SCHEMA_NAME = "dbo"
 
 CHUNK_SIZE = 1000
