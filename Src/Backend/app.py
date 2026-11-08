@@ -14,11 +14,13 @@ from uuid import uuid4
 from dotenv import load_dotenv
 from fastapi import BackgroundTasks, FastAPI, HTTPException, status
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 
 
 SRC_DIR = Path(__file__).resolve().parents[1]
 PROJECT_DIR = SRC_DIR.parent
 PIPELINE_FILE = SRC_DIR / "Data Engineering" / "pipeline.py"
+FRONTEND_DIR = SRC_DIR / "Frontend"
 load_dotenv(PROJECT_DIR / ".env")
 
 
@@ -176,3 +178,7 @@ def start_pipeline(background_tasks: BackgroundTasks) -> dict[str, Any]:
 @app.get("/pipeline/status", tags=["pipeline"])
 def pipeline_status() -> dict[str, Any]:
     return _state_snapshot()
+
+
+if FRONTEND_DIR.is_dir():
+    app.mount("/ui", StaticFiles(directory=FRONTEND_DIR, html=True), name="frontend")
