@@ -1,0 +1,14 @@
+﻿Column,Available rows,Blank rows,First available date,Last available date
+note_test,197,37204,2020-12-04,2024-08-22
+casi_da_screening,3402,33999,2020-06-25,2020-12-03
+casi_da_sospetto_diagnostico,3402,33999,2020-06-25,2020-12-03
+note_casi,4634,32767,2020-12-04,2025-01-08
+note,9839,27562,2020-03-07,2025-01-08
+tamponi_test_molecolare,30555,6846,2021-01-15,2025-01-08
+tamponi_test_antigenico_rapido,30555,6846,2021-01-15,2025-01-08
+totale_positivi_test_molecolare,30555,6846,2021-01-15,2025-01-08
+totale_positivi_test_antigenico_rapido,30555,6846,2021-01-15,2025-01-08
+codice_nuts_1,30555,6846,2021-01-15,2025-01-08
+codice_nuts_2,30555,6846,2021-01-15,2025-01-08
+ingressi_terapia_intensiva,31458,5943,2020-12-03,2025-01-08
+casi_testati,36246,1155,2020-04-19,2025-01-08

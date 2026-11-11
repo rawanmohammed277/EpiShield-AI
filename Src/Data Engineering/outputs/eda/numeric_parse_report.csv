@@ -1,0 +1,23 @@
+﻿Column,Blank source values,Nonblank values that fail numeric conversion
+codice_regione,0,0
+lat,0,0
+long,0,0
+ricoverati_con_sintomi,0,0
+terapia_intensiva,0,0
+totale_ospedalizzati,0,0
+isolamento_domiciliare,0,0
+totale_positivi,0,0
+variazione_totale_positivi,0,0
+nuovi_positivi,0,0
+dimessi_guariti,0,0
+deceduti,0,0
+casi_da_sospetto_diagnostico,33999,0
+casi_da_screening,33999,0
+totale_casi,0,0
+tamponi,0,0
+casi_testati,1155,0
+ingressi_terapia_intensiva,5943,0
+totale_positivi_test_molecolare,6846,0
+totale_positivi_test_antigenico_rapido,6846,0
+tamponi_test_molecolare,6846,0
+tamponi_test_antigenico_rapido,6846,0

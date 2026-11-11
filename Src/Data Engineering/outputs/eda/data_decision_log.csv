@@ -1,0 +1,7 @@
+﻿Issue,Decision,Reason
+"Core EDA fields (date, region, new cases)",All source rows are retained. No imputation or row deletion; current core completeness check must be zero missing rows.,These fields define the daily regional series.
+Negative nuovi_positivi values,Preserve reported values for EDA and reconciliation. Flag the 14 rows; exclude only these target observations from count-model training until an approved reconciliation rule exists. Do not replace with zero.,"A daily case count cannot be negative. Only some rows have an annotation, so the exact correction is not fully established."
+Blank non-core indicators,Keep as missing; do not fill with zero. Exclude period-limited indicators from an all-period baseline; only use them in a period where source availability is consistent and documented.,Availability changes over time and blank does not mean zero.
+Notes and note codes,Keep for audit/context; do not use as numeric predictors or drop the underlying observation. Unresolved note codes remain unresolved.,The processed note table does not provide a verified code-to-text mapping for every row.
+Cumulative deaths,"Never sum cumulative deaths across dates. Use the last cumulative value for a period or date differences for daily change, and inspect revisions.",Summing cumulative snapshots double-counts.
+Population by age group,Sum age-group rows by region before calculating per-capita rates.,Population file has multiple age rows per region.
