@@ -1,0 +1,24 @@
+EpiShield AI - Exploratory Data Analysis Report
+=======================================================
+
+Dataset Overview
+------------------------------
+Regional dataset shape: (37401, 38)
+Date range: 2020-02-24 00:00:00 to 2025-01-08 00:00:00
+Number of regions: 21
+Missing daily cases values: 0
+Negative daily cases values: 14
+Duplicate region-date records: 0
+
+Saved Outputs
+------------------------------
+Saved tables: 4
+Saved figures: 0
+
+Saved Tables:
+regional_national_comparison.csv
+regional_data.csv
+national_daily_data.csv
+population_data.csv
+
+Saved Figures:
