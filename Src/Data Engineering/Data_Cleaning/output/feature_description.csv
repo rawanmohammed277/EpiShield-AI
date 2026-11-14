@@ -1,0 +1,28 @@
+﻿feature,type,meaning,how_computed
+target_cases_7d,Target,الحالات الجديدة بعد 7 أيام (حالات يوم t+7),shift(-7) لكل إقليم
+day,Time,رقم اليوم في الشهر,من التاريخ
+day_of_week,Time,يوم الأسبوع (0 الإثنين لـ 6 الأحد),من التاريخ
+month,Time,الشهر,من التاريخ
+quarter,Time,الربع السنوي,من التاريخ
+year,Time,السنة,من التاريخ
+is_weekend,Time,هل اليوم سبت أو أحد,day_of_week >= 5
+cases_today,Lag,حالات اليوم (يوم التوقع),new_cases
+cases_lag_1,Lag,حالات إمبارح,shift(1) لكل إقليم
+cases_lag_2,Lag,حالات من يومين,shift(2)
+cases_lag_3,Lag,حالات من 3 أيام,shift(3)
+cases_lag_7,Lag,حالات من أسبوع,shift(7)
+cases_lag_14,Lag,حالات من أسبوعين,shift(14)
+rolling_mean_7,Rolling,متوسط آخر 7 أيام (بيشمل النهارده),rolling(7).mean()
+rolling_mean_14,Rolling,متوسط آخر 14 يوم,rolling(14).mean()
+rolling_mean_30,Rolling,متوسط آخر 30 يوم,rolling(30).mean()
+rolling_std_7,Rolling,تذبذب الحالات في آخر 7 أيام,rolling(7).std()
+rolling_max_7,Rolling,أعلى حالات في آخر 7 أيام,rolling(7).max()
+daily_change,Additional,الفرق بين حالات اليوم وإمبارح,cases_today - cases_lag_1
+growth_rate_7,Additional,معدل نمو متوسط 7 أيام مقارنة بالـ 7 أيام اللي قبلهم,(mean7 - prev_mean7) / (prev_mean7 + 1)
+cases_per_100k,Additional,حالات اليوم لكل 100 ألف نسمة,cases_today / population * 100000
+rolling_mean_7_per_100k,Additional,متوسط 7 أيام لكل 100 ألف نسمة,rolling_mean_7 / population * 100000
+hospitalized,Additional,إجمالي المحجوزين في المستشفى اليوم,totale_ospedalizzati
+icu,Additional,الموجودين في العناية المركزة اليوم,terapia_intensiva
+hospitalized_per_100k,Additional,المحجوزين لكل 100 ألف نسمة,hospitalized / population * 100000
+icu_per_100k,Additional,العناية المركزة لكل 100 ألف نسمة,icu / population * 100000
+region_XX,Region,عمود 0/1 لكل إقليم (21 عمود)، XX كود الإقليم,get_dummies
