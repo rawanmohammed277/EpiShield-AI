@@ -1,0 +1,3 @@
+﻿data,date_parsed,totale_positivi,totale_ospedalizzati,isolamento_domiciliare,expected,difference
+2020-02-25T18:00:00,2020-02-25,311,150,162,312,-1
+2021-11-07T17:00:00,2021-11-07,96987,3613,93380,96993,-6

@@ -1,0 +1,2 @@
+﻿data,codice_regione,denominazione_regione,date_parsed,totale_positivi,totale_ospedalizzati,isolamento_domiciliare,expected,difference
+2021-11-07T17:00:00,05,Veneto,2021-11-07,12616,247,12375,12622,-6

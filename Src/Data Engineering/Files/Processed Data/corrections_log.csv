@@ -1,0 +1,4 @@
+﻿dataset,date,codice_regione,column,old_value,new_value,rule,evidence
+Regional,2021-11-07,05,totale_positivi,12616,12622,R2+R3,"R2 and R3 both failed; totale_positivi recomputed from ['totale_ospedalizzati', 'isolamento_domiciliare'] makes R3 hold too"
+National,2020-02-25,ITA,totale_ospedalizzati,150,149,R1+R2,"R1 and R2 both failed; totale_ospedalizzati recomputed from ['ricoverati_con_sintomi', 'terapia_intensiva'] makes R2 hold too"
+National,2021-11-07,ITA,totale_positivi,96987,96993,R2+R3,"R2 and R3 both failed; totale_positivi recomputed from ['totale_ospedalizzati', 'isolamento_domiciliare'] makes R3 hold too"

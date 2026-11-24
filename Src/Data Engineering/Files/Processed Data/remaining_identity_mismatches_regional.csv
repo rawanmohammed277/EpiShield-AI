@@ -1,0 +1,15 @@
+﻿date,codice_regione,denominazione_regione,rule,recorded,expected,difference,dataset
+2021-08-11,02,Valle d'Aosta,R3: totale_casi = totale_positivi + dimessi_guariti + deceduti,11871,11869,2,Regional
+2021-06-23,05,Veneto,R3: totale_casi = totale_positivi + dimessi_guariti + deceduti,425162,425159,3,Regional
+2021-08-01,05,Veneto,R3: totale_casi = totale_positivi + dimessi_guariti + deceduti,437066,437063,3,Regional
+2021-06-23,06,Friuli Venezia Giulia,R3: totale_casi = totale_positivi + dimessi_guariti + deceduti,107502,107487,15,Regional
+2021-02-03,08,Emilia-Romagna,R3: totale_casi = totale_positivi + dimessi_guariti + deceduti,221615,221614,1,Regional
+2020-11-04,09,Toscana,R3: totale_casi = totale_positivi + dimessi_guariti + deceduti,52815,52799,16,Regional
+2024-07-05,09,Toscana,R3: totale_casi = totale_positivi + dimessi_guariti + deceduti,1655099,1655119,-20,Regional
+2024-07-06,09,Toscana,R3: totale_casi = totale_positivi + dimessi_guariti + deceduti,1655140,1655160,-20,Regional
+2024-07-07,09,Toscana,R3: totale_casi = totale_positivi + dimessi_guariti + deceduti,1655186,1655206,-20,Regional
+2024-07-08,09,Toscana,R3: totale_casi = totale_positivi + dimessi_guariti + deceduti,1655186,1655175,11,Regional
+2024-07-09,09,Toscana,R3: totale_casi = totale_positivi + dimessi_guariti + deceduti,1655319,1655339,-20,Regional
+2024-07-10,09,Toscana,R3: totale_casi = totale_positivi + dimessi_guariti + deceduti,1655414,1655433,-19,Regional
+2022-01-11,15,Campania,R3: totale_casi = totale_positivi + dimessi_guariti + deceduti,732604,732377,227,Regional
+2020-11-04,18,Calabria,R3: totale_casi = totale_positivi + dimessi_guariti + deceduti,6092,6091,1,Regional

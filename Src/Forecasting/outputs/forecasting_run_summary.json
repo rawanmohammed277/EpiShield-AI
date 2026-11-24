@@ -1,0 +1,141 @@
+{
+  "horizon": "1 day ahead",
+  "target": "target_next_day_new_cases",
+  "selected_model_by_validation_MAE": "XGBoost_log1p",
+  "predictor_count": 41,
+  "predictors": [
+    "day",
+    "day_of_week",
+    "month",
+    "quarter",
+    "year",
+    "is_weekend",
+    "cases_today",
+    "cases_lag_1",
+    "cases_lag_2",
+    "cases_lag_3",
+    "cases_lag_7",
+    "cases_lag_14",
+    "rolling_mean_7",
+    "rolling_mean_14",
+    "rolling_mean_30",
+    "rolling_std_7",
+    "rolling_max_7",
+    "daily_change",
+    "growth_rate_7",
+    "is_negative_source_correction",
+    "region_1",
+    "region_10",
+    "region_11",
+    "region_12",
+    "region_13",
+    "region_14",
+    "region_15",
+    "region_16",
+    "region_17",
+    "region_18",
+    "region_19",
+    "region_2",
+    "region_20",
+    "region_21",
+    "region_22",
+    "region_3",
+    "region_5",
+    "region_6",
+    "region_7",
+    "region_8",
+    "region_9"
+  ],
+  "train_rows": 25717,
+  "validation_rows": 5502,
+  "test_rows": 5501,
+  "future_forecast_status": "Generated next-day forecasts for all available regions.",
+  "validation_metrics": [
+    {
+      "Model": "XGBoost_log1p",
+      "MAE": 34.055440525853044,
+      "RMSE": 115.60017451474253,
+      "MAPE_percent": 53.82699951976281,
+      "sMAPE_percent": 51.64297167969204
+    },
+    {
+      "Model": "RandomForest_log1p",
+      "MAE": 35.99276231788787,
+      "RMSE": 127.29252416651667,
+      "MAPE_percent": 48.564445348474216,
+      "sMAPE_percent": 52.528945849533784
+    },
+    {
+      "Model": "RandomForest_raw",
+      "MAE": 39.51816306457763,
+      "RMSE": 133.37874871588568,
+      "MAPE_percent": 69.03312920035725,
+      "sMAPE_percent": 54.106152581233836
+    },
+    {
+      "Model": "XGBoost_raw",
+      "MAE": 40.95412449910001,
+      "RMSE": 128.5322842082148,
+      "MAPE_percent": 123.22888825634992,
+      "sMAPE_percent": 68.19761511790425
+    },
+    {
+      "Model": "SeasonalNaive",
+      "MAE": 51.284442021083244,
+      "RMSE": 154.5916720265946,
+      "MAPE_percent": 71.13366888016431,
+      "sMAPE_percent": 58.11981606425548
+    },
+    {
+      "Model": "Naive",
+      "MAE": 70.59541984732824,
+      "RMSE": 236.02523754674357,
+      "MAPE_percent": 70.96901178362985,
+      "sMAPE_percent": 65.80129686060424
+    }
+  ],
+  "test_metrics": [
+    {
+      "Model": "RandomForest_raw",
+      "MAE": 10.511864502144416,
+      "RMSE": 23.9177752958025,
+      "MAPE_percent": 68.60843490270064,
+      "sMAPE_percent": 66.93304897707915
+    },
+    {
+      "Model": "RandomForest_log1p",
+      "MAE": 10.672018345818394,
+      "RMSE": 26.0011492068382,
+      "MAPE_percent": 50.099097776711645,
+      "sMAPE_percent": 68.18971608232263
+    },
+    {
+      "Model": "XGBoost_log1p",
+      "MAE": 12.32671739227628,
+      "RMSE": 30.324412521267313,
+      "MAPE_percent": 52.2546359099629,
+      "sMAPE_percent": 69.60827049294586
+    },
+    {
+      "Model": "SeasonalNaive",
+      "MAE": 14.092892201417923,
+      "RMSE": 33.047395357852224,
+      "MAPE_percent": 63.101162125632335,
+      "sMAPE_percent": 67.50527333436312
+    },
+    {
+      "Model": "XGBoost_raw",
+      "MAE": 14.15184116546844,
+      "RMSE": 27.322060433477475,
+      "MAPE_percent": 168.98810945505272,
+      "sMAPE_percent": 84.29631641483553
+    },
+    {
+      "Model": "Naive",
+      "MAE": 20.145791674241046,
+      "RMSE": 56.72544759003783,
+      "MAPE_percent": 80.48547906662915,
+      "sMAPE_percent": 72.39512688660481
+    }
+  ]
+}

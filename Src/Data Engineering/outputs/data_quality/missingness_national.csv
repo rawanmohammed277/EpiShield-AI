@@ -1,0 +1,12 @@
+﻿column,missing,missing_pct,first_available,last_available,first_missing,last_missing,missing_before_first_available,missing_inside_available_window,missing_after_last_available
+note_casi,1781,100.0,,,2020-02-24,2025-01-08,1781,0,0
+note_test,1781,100.0,,,2020-02-24,2025-01-08,1781,0,0
+note,1737,97.53,2020-03-07,2020-06-24,2020-02-24,2025-01-08,12,66,1659
+casi_da_sospetto_diagnostico,1619,90.9,2020-06-25,2020-12-03,2020-02-24,2025-01-08,122,0,1497
+casi_da_screening,1619,90.9,2020-06-25,2020-12-03,2020-02-24,2025-01-08,122,0,1497
+tamponi_test_molecolare,326,18.3,2021-01-15,2025-01-08,2020-02-24,2021-01-14,326,0,0
+totale_positivi_test_molecolare,326,18.3,2021-01-15,2025-01-08,2020-02-24,2021-01-14,326,0,0
+tamponi_test_antigenico_rapido,326,18.3,2021-01-15,2025-01-08,2020-02-24,2021-01-14,326,0,0
+totale_positivi_test_antigenico_rapido,326,18.3,2021-01-15,2025-01-08,2020-02-24,2021-01-14,326,0,0
+ingressi_terapia_intensiva,283,15.89,2020-12-03,2025-01-08,2020-02-24,2020-12-02,283,0,0
+casi_testati,55,3.09,2020-04-19,2025-01-08,2020-02-24,2020-04-18,55,0,0

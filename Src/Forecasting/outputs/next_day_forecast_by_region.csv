@@ -1,0 +1,22 @@
+codice_regione,denominazione_regione,date,Forecast_Target_Date,Predicted_Next_Day_Cases,Selected_Model
+17,Basilicata,2025-01-08,2025-01-09,0.07241855,XGBoost_log1p
+2,Valle d'Aosta,2025-01-08,2025-01-09,0.043749508,XGBoost_log1p
+14,Molise,2025-01-08,2025-01-09,0.00559228,XGBoost_log1p
+22,Trento,2025-01-08,2025-01-09,0.9426371,XGBoost_log1p
+3,Lombardia,2025-01-08,2025-01-09,48.686054,XGBoost_log1p
+8,Emilia-Romagna,2025-01-08,2025-01-09,23.607254,XGBoost_log1p
+16,Puglia,2025-01-08,2025-01-09,7.791807,XGBoost_log1p
+20,Sardegna,2025-01-08,2025-01-09,1.2602141,XGBoost_log1p
+5,Veneto,2025-01-08,2025-01-09,16.603672,XGBoost_log1p
+11,Marche,2025-01-08,2025-01-09,1.5460923,XGBoost_log1p
+6,Friuli Venezia Giulia,2025-01-08,2025-01-09,7.969165,XGBoost_log1p
+12,Lazio,2025-01-08,2025-01-09,8.675944,XGBoost_log1p
+10,Umbria,2025-01-08,2025-01-09,0.22164564,XGBoost_log1p
+7,Liguria,2025-01-08,2025-01-09,1.1456783,XGBoost_log1p
+21,Bolzano,2025-01-08,2025-01-09,0.8579819,XGBoost_log1p
+15,Campania,2025-01-08,2025-01-09,7.4919443,XGBoost_log1p
+19,Sicilia,2025-01-08,2025-01-09,1.0678172,XGBoost_log1p
+18,Calabria,2025-01-08,2025-01-09,2.7352738,XGBoost_log1p
+13,Abruzzo,2025-01-08,2025-01-09,2.666087,XGBoost_log1p
+1,Piemonte,2025-01-08,2025-01-09,10.651287,XGBoost_log1p
+9,Toscana,2025-01-08,2025-01-09,22.7862,XGBoost_log1p

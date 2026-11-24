@@ -1,0 +1,13 @@
+﻿date,rule,recorded,expected,difference,dataset
+2020-11-04,R3: totale_casi = totale_positivi + dimessi_guariti + deceduti,790377,790360,17,National
+2021-02-03,R3: totale_casi = totale_positivi + dimessi_guariti + deceduti,2583790,2583789,1,National
+2021-06-23,R3: totale_casi = totale_positivi + dimessi_guariti + deceduti,4255434,4255416,18,National
+2021-08-01,R3: totale_casi = totale_positivi + dimessi_guariti + deceduti,4355348,4355345,3,National
+2021-08-11,R3: totale_casi = totale_positivi + dimessi_guariti + deceduti,4413162,4413160,2,National
+2022-01-11,R3: totale_casi = totale_positivi + dimessi_guariti + deceduti,7774863,7774636,227,National
+2024-07-05,R3: totale_casi = totale_positivi + dimessi_guariti + deceduti,26742114,26742134,-20,National
+2024-07-06,R3: totale_casi = totale_positivi + dimessi_guariti + deceduti,26742772,26742792,-20,National
+2024-07-07,R3: totale_casi = totale_positivi + dimessi_guariti + deceduti,26743348,26743368,-20,National
+2024-07-08,R3: totale_casi = totale_positivi + dimessi_guariti + deceduti,26743662,26743651,11,National
+2024-07-09,R3: totale_casi = totale_positivi + dimessi_guariti + deceduti,26745127,26745147,-20,National
+2024-07-10,R3: totale_casi = totale_positivi + dimessi_guariti + deceduti,26746340,26746359,-19,National
