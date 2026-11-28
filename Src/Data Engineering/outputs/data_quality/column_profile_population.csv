@@ -1,0 +1,13 @@
+﻿column,dtype,missing_or_empty,missing_pct,blank_strings,unique_non_empty,example
+codice_regione,str,0,0.0,0,21,13
+codice_nuts_1,str,0,0.0,0,5,ITF
+descrizione_nuts_1,str,0,0.0,0,5,Sud
+codice_nuts_2,str,0,0.0,0,21,ITF1
+denominazione_regione,str,0,0.0,0,21,Abruzzo
+sigla_regione,str,0,0.0,0,21,ABR
+latitudine_regione,str,0,0.0,0,21,42.35122196
+longitudine_regione,str,0,0.0,0,21,13.39843823
+range_eta,str,0,0.0,0,12,0-15
+totale_genere_maschile,str,0,0.0,0,210,87423
+totale_genere_femminile,str,0,0.0,0,210,82474
+totale_generale,str,0,0.0,0,210,169897

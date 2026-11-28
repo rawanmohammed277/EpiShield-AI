@@ -1,0 +1,29 @@
+﻿dataset,step,detail,affected
+Population,Types and text,"Counts -> Int64, coordinates -> float, text trimmed, codes -> 2-char strings, labels parsed",210.0
+Population,Region names,"Canonical names from population file; mapping applied: {'P.A. Bolzano': 'Bolzano', 'P.A. Trento': 'Trento'}",
+Population,Age-band flag,"Age bands with gaps, overlaps, or incomplete all-age coverage are flagged; source population scope/reference year is unverified, so denominators are not approved for epidemiological rates",1.0
+Regional,Dropped constant column,'stato' always equals 'ITA',37401.0
+Regional,Types and text,"date -> calendar day; counts -> Int64 (missing preserved); notes trimmed, blanks -> missing",37401.0
+Regional,Canonical region names,"Names taken from the region dimension via code (e.g. {'P.A. Bolzano': 'Bolzano', 'P.A. Trento': 'Trento'})",3562.0
+Regional,Coordinates,lat/long set to one value per region from the dimension; rows that differed materially: 0,37401.0
+Regional,codice_nuts_1 restored,Empty cells filled from the region dimension (value is constant per region),6846.0
+Regional,codice_nuts_2 restored,Empty cells filled from the region dimension (value is constant per region),6846.0
+Regional,Evidence-based corrections,Shared faulty field recomputed only when it makes both failing identities hold,1.0
+Regional,Flag flag_value_corrected,Original numbers untouched; boolean marker added,1.0
+Regional,Flag flag_negative_daily_value,Original numbers untouched; boolean marker added,19.0
+Regional,Flag flag_cumulative_decrease,Original numbers untouched; boolean marker added,1079.0
+Regional,Flag flag_identity_mismatch,Original numbers untouched; boolean marker added,14.0
+Regional,Flag flag_new_cases_mismatch,Original numbers untouched; boolean marker added,1923.0
+National,Dropped constant column,'stato' always equals 'ITA',1781.0
+National,Dropped 100% empty columns,"['note_test', 'note_casi']",2.0
+National,Types and text,"date -> calendar day; counts -> Int64 (missing preserved); notes trimmed, blanks -> missing",1781.0
+National,Evidence-based corrections,Shared faulty field recomputed only when it makes both failing identities hold,2.0
+National,Flag flag_value_corrected,Original numbers untouched; boolean marker added,2.0
+National,Flag flag_negative_daily_value,Original numbers untouched; boolean marker added,0.0
+National,Flag flag_cumulative_decrease,Original numbers untouched; boolean marker added,30.0
+National,Flag flag_identity_mismatch,Original numbers untouched; boolean marker added,12.0
+National,Flag flag_new_cases_mismatch,Original numbers untouched; boolean marker added,1033.0
+Notes,Whitespace-only notes,Converted to missing; has_note = False. Text content (Italian) otherwise unchanged apart from collapsed whitespace,14.0
+Model tables,Columns left out,"['casi_da_sospetto_diagnostico', 'casi_da_screening'] and free-text note columns",
+Model tables,Negative daily values -> missing,nuovi_positivi and ingressi_terapia_intensiva < 0 set to missing (not 0),19.0
+Model tables,Derived daily series,"new_deaths, new_recovered, new_tests: consecutive days only, never negative",

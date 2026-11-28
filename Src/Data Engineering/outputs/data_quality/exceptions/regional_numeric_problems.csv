@@ -1,0 +1,20 @@
+﻿data,codice_regione,denominazione_regione,column,value,problem
+2020-02-27T18:00:00,01,Piemonte,nuovi_positivi,-1,negative value
+2020-03-01T17:00:00,07,Liguria,nuovi_positivi,-17,negative value
+2020-03-02T18:00:00,07,Liguria,nuovi_positivi,-3,negative value
+2020-03-02T18:00:00,19,Sicilia,nuovi_positivi,-2,negative value
+2020-03-09T18:00:00,01,Piemonte,nuovi_positivi,-10,negative value
+2020-04-17T17:00:00,18,Calabria,nuovi_positivi,-18,negative value
+2020-05-04T17:00:00,20,Sardegna,nuovi_positivi,-2,negative value
+2020-05-07T17:00:00,17,Basilicata,nuovi_positivi,-16,negative value
+2020-05-08T17:00:00,17,Basilicata,nuovi_positivi,-1,negative value
+2020-05-19T17:00:00,11,Marche,nuovi_positivi,-3,negative value
+2020-05-25T17:00:00,20,Sardegna,nuovi_positivi,-2,negative value
+2020-06-09T17:00:00,20,Sardegna,nuovi_positivi,-1,negative value
+2020-06-12T17:00:00,15,Campania,nuovi_positivi,-229,negative value
+2024-06-13T17:00:00,02,Valle d'Aosta,nuovi_positivi,-1,negative value
+2022-04-17T17:00:00,10,Umbria,ingressi_terapia_intensiva,-1,negative value
+2022-04-18T17:00:00,10,Umbria,ingressi_terapia_intensiva,-1,negative value
+2022-04-26T17:00:00,10,Umbria,ingressi_terapia_intensiva,-2,negative value
+2022-05-17T17:00:00,10,Umbria,ingressi_terapia_intensiva,-1,negative value
+2022-06-06T17:00:00,10,Umbria,ingressi_terapia_intensiva,-1,negative value

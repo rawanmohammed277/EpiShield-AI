@@ -1,0 +1,12 @@
+﻿column,decreasing_steps,largest_drop,first_decrease,last_decrease
+totale_casi,1,-148.0,2020-06-19,2020-06-19
+deceduti,3,-40.0,2020-06-24,2024-02-23
+dimessi_guariti,3,-618.0,2023-07-01,2024-06-13
+tamponi,2,-27368510.0,2020-12-17,2024-11-05
+casi_testati,7,-25196847.0,2020-12-06,2024-11-24
+tamponi_test_molecolare,0,0.0,,
+tamponi_test_antigenico_rapido,1,-27370138.0,2024-11-05,2024-11-05
+totale_positivi_test_molecolare,9,-569200.0,2022-02-27,2024-09-26
+totale_positivi_test_antigenico_rapido,6,-568809.0,2021-06-12,2024-09-25
+casi_da_sospetto_diagnostico,17,-988470.0,2020-06-26,2020-12-03
+casi_da_screening,1,-653140.0,2020-12-03,2020-12-03

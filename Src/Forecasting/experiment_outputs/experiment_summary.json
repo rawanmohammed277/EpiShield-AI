@@ -1,0 +1,137 @@
+{
+  "spike_threshold_from_train_only": 2547.0,
+  "selected_models": {
+    "Baseline": "Baseline_XGBoost_log1p",
+    "Enhanced": "Enhanced_XGBoost_log1p"
+  },
+  "validation_results": [
+    {
+      "Candidate": "Enhanced_XGBoost_log1p",
+      "Variant": "Enhanced",
+      "Model": "XGBoost",
+      "Transform": "log1p",
+      "MAE": 33.584408401389396,
+      "RMSE": 121.25571406465836,
+      "Underprediction_Rate_%": 48.0552526354053,
+      "Mean_Underprediction": 21.03068737869304,
+      "Max_Underprediction": 5156.2325439453125,
+      "Spike_MAE": 1541.916000366211,
+      "Spike_Rows": 8
+    },
+    {
+      "Candidate": "Baseline_XGBoost_log1p",
+      "Variant": "Baseline",
+      "Model": "XGBoost",
+      "Transform": "log1p",
+      "MAE": 34.055440525853044,
+      "RMSE": 115.60017451474253,
+      "Underprediction_Rate_%": 47.25554343874955,
+      "Mean_Underprediction": 22.030487924543394,
+      "Max_Underprediction": 4581.322021484375,
+      "Spike_MAE": 1477.1898956298828,
+      "Spike_Rows": 8
+    },
+    {
+      "Candidate": "Enhanced_RandomForest_log1p",
+      "Variant": "Enhanced",
+      "Model": "RandomForest",
+      "Transform": "log1p",
+      "MAE": 35.86719857439012,
+      "RMSE": 127.63492889839218,
+      "Underprediction_Rate_%": 48.073427844420216,
+      "Mean_Underprediction": 19.018559505183255,
+      "Max_Underprediction": 4997.981199591817,
+      "Spike_MAE": 1468.6808795020356,
+      "Spike_Rows": 8
+    },
+    {
+      "Candidate": "Baseline_RandomForest_log1p",
+      "Variant": "Baseline",
+      "Model": "RandomForest",
+      "Transform": "log1p",
+      "MAE": 35.99276231788786,
+      "RMSE": 127.29252416651666,
+      "Underprediction_Rate_%": 48.218829516539444,
+      "Mean_Underprediction": 19.034827595306467,
+      "Max_Underprediction": 4931.156035625388,
+      "Spike_MAE": 1487.7564614682228,
+      "Spike_Rows": 8
+    },
+    {
+      "Candidate": "Enhanced_RandomForest_raw",
+      "Variant": "Enhanced",
+      "Model": "RandomForest",
+      "Transform": "raw",
+      "MAE": 39.41988110033033,
+      "RMSE": 132.64154413650544,
+      "Underprediction_Rate_%": 32.097419120319884,
+      "Mean_Underprediction": 13.863177007401337,
+      "Max_Underprediction": 4700.935982683982,
+      "Spike_MAE": 1453.981964824822,
+      "Spike_Rows": 8
+    },
+    {
+      "Candidate": "Baseline_RandomForest_raw",
+      "Variant": "Baseline",
+      "Model": "RandomForest",
+      "Transform": "raw",
+      "MAE": 39.51816306457763,
+      "RMSE": 133.37874871588568,
+      "Underprediction_Rate_%": 31.58851326790258,
+      "Mean_Underprediction": 13.90780555841425,
+      "Max_Underprediction": 4802.348619047619,
+      "Spike_MAE": 1481.504222253975,
+      "Spike_Rows": 8
+    },
+    {
+      "Candidate": "Enhanced_XGBoost_raw",
+      "Variant": "Enhanced",
+      "Model": "XGBoost",
+      "Transform": "raw",
+      "MAE": 39.99644248929181,
+      "RMSE": 131.4687307669753,
+      "Underprediction_Rate_%": 36.38676844783715,
+      "Mean_Underprediction": 15.764081336868983,
+      "Max_Underprediction": 4932.7135009765625,
+      "Spike_MAE": 1482.4520111083984,
+      "Spike_Rows": 8
+    },
+    {
+      "Candidate": "Baseline_XGBoost_raw",
+      "Variant": "Baseline",
+      "Model": "XGBoost",
+      "Transform": "raw",
+      "MAE": 40.95412449910001,
+      "RMSE": 128.5322842082148,
+      "Underprediction_Rate_%": 32.02471828426027,
+      "Mean_Underprediction": 16.883528916746673,
+      "Max_Underprediction": 4663.84619140625,
+      "Spike_MAE": 1454.7874298095703,
+      "Spike_Rows": 8
+    }
+  ],
+  "test_results": [
+    {
+      "Variant": "Baseline",
+      "Selected_Model": "Baseline_XGBoost_log1p",
+      "MAE": 12.32671739227628,
+      "RMSE": 30.324412521267313,
+      "Underprediction_Rate_%": 53.172150518087626,
+      "Mean_Underprediction": 10.079544396659266,
+      "Max_Underprediction": 401.51275634765625,
+      "Spike_MAE": null,
+      "Spike_Rows": 0
+    },
+    {
+      "Variant": "Enhanced",
+      "Selected_Model": "Enhanced_XGBoost_log1p",
+      "MAE": 11.607842617898545,
+      "RMSE": 28.03027317571399,
+      "Underprediction_Rate_%": 53.19032903108526,
+      "Mean_Underprediction": 9.348523351464063,
+      "Max_Underprediction": 361.10169982910156,
+      "Spike_MAE": null,
+      "Spike_Rows": 0
+    }
+  ]
+}

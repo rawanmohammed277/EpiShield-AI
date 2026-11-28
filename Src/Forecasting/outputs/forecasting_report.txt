@@ -1,0 +1,33 @@
+EPISHIELD-AI | PHASE 3 FORECASTING REPORT
+================================================
+Forecast horizon: one day ahead
+Target: target_next_day_new_cases
+Selected model by Validation MAE: XGBoost_log1p
+Predictors: 41
+Rows: Train=25717, Validation=5502, Test=5501
+
+VALIDATION METRICS
+             Model       MAE       RMSE  MAPE_percent  sMAPE_percent
+     XGBoost_log1p 34.055441 115.600175     53.827000      51.642972
+RandomForest_log1p 35.992762 127.292524     48.564445      52.528946
+  RandomForest_raw 39.518163 133.378749     69.033129      54.106153
+       XGBoost_raw 40.954124 128.532284    123.228888      68.197615
+     SeasonalNaive 51.284442 154.591672     71.133669      58.119816
+             Naive 70.595420 236.025238     70.969012      65.801297
+
+TEST METRICS
+             Model       MAE      RMSE  MAPE_percent  sMAPE_percent
+  RandomForest_raw 10.511865 23.917775     68.608435      66.933049
+RandomForest_log1p 10.672018 26.001149     50.099098      68.189716
+     XGBoost_log1p 12.326717 30.324413     52.254636      69.608270
+     SeasonalNaive 14.092892 33.047395     63.101162      67.505273
+       XGBoost_raw 14.151841 27.322060    168.988109      84.296316
+             Naive 20.145792 56.725448     80.485479      72.395127
+
+Method notes:
+- Existing Phase 2 splits were used unchanged.
+- Dates, target, and raw region identifiers were excluded from predictors.
+- Missing values were imputed using training medians.
+- Predictions were clipped at zero; MAPE excludes zero actuals.
+- Seasonal Naive uses the same weekday one week before the target date.
+- Future forecast: Generated next-day forecasts for all available regions.

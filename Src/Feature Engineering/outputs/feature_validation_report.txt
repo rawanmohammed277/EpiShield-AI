@@ -1,0 +1,49 @@
+=== Data Preparation ===
+Input file: C:\Users\New Star Computer 25\EpiShield-AI\Src\Processed Data\regional_clean.csv
+Output directory: C:\Users\New Star Computer 25\EpiShield-AI\Src\Feature Engineering\outputs
+Rows after removing invalid identifiers/target: 37401
+Rows removed for missing essential values: 0
+Number of regions: 21
+Date range: 2020-02-24 to 2025-01-08
+Duplicate region/date keys: 0
+Non-consecutive date transitions within regions: 0
+Negative source corrections preserved (not clipped): 14
+Hospitalized/ICU features DISABLED by default pending confirmation of operational availability.
+
+=== Feature Validation ===
+Rows with expected missing values from lags/rolling/target: 630
+cases_lag_7 matches the value 7 days earlier: True
+cases_lag_14 matches the value 14 days earlier: True
+Next-day target matches t+1 source value: True
+rolling_mean_7 matches manual calculation: True
+Historical feature cutoff test (no future data influence): True
+All populated targets point exactly one day ahead: True
+Number of infinite numeric values: 0
+Minimum observed source daily cases: -229.0
+Negative next-day target rows retained in full output but excluded from model splits: 14
+
+=== Temporal Split ===
+Train: 25717 rows | 2020-03-24 to 2023-07-31 | 21 regions
+Validation: 5502 rows | 2023-08-02 to 2024-04-19 | 21 regions
+Test: 5501 rows | 2024-04-21 to 2025-01-07 | 21 regions
+No date overlap between splits: True
+Training targets end before validation begins: True
+Validation targets end before test begins: True
+Final modeling dataset shape: (36762, 46) | Number of predictors: 41
+Missing values in final modeling dataset: 0
+
+=== Final Validation Summary ===
+PASS | No duplicate region/date keys
+PASS | Lag 7 validation
+PASS | Lag 14 validation
+PASS | Next-day target validation
+PASS | Rolling mean 7 validation
+PASS | Historical cutoff leakage test
+PASS | Target date is exactly t+1
+PASS | No infinite values
+PASS | No date overlap between splits
+PASS | Train targets end before validation
+PASS | Validation targets end before test
+PASS | No missing values in final modeling dataset
+
+Overall validation: PASS

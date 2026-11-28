@@ -1,0 +1,20 @@
+﻿column,meaning
+flag_value_corrected,True when a value in the row was corrected (see corrections_log.csv)
+flag_identity_mismatch,"True when an accounting identity still fails (totale_ospedalizzati, totale_positivi, totale_casi); original values kept"
+flag_negative_daily_value,True when nuovi_positivi or ingressi_terapia_intensiva was negative in the source (set to missing in the model table)
+flag_cumulative_decrease,True when a cumulative column decreased vs the previous reported value (source revision)
+flag_new_cases_mismatch,True when nuovi_positivi differs from the change in totale_casi
+new_cases_vs_cumulative_diff,(change in totale_casi vs previous day) - nuovi_positivi; empty when not comparable
+new_deaths / new_recovered / new_tests,Daily change of deceduti / dimessi_guariti / tamponi; consecutive days only; empty if the cumulative decreased
+new_cases_per_100k / active_cases_per_100k,Disabled (missing) until the population file scope and reference year are verified.
+new_cases_per_100k_20plus / active_cases_per_100k_20plus,Disabled (missing) until the population file scope and reference year are verified.
+target_next_day_new_cases,"Next calendar day new positives; supervised label, never include in model features."
+target_date,"Date corresponding to target_next_day_new_cases; label metadata, never a predictor."
+population_observed_sum,Sum of available age bands; may be incomplete.
+population_scope_verified / population_denominator_usable,False until the source is confirmed to represent resident population with a known reference year.
+population_total,Observed population sum where age bands are complete; not approved as an epidemiological denominator until scope/reference year are verified.
+population_20plus,Residents aged 20+; defined identically for every region
+flag_population_excludes_young,True for regions whose age bands start above age 0 (Lombardia: ages 0-4 missing)
+has_testing_breakdown / has_casi_testati / has_icu_entries,True from the first date the source column is reported.
+*_value_present,True only when this exact row contains a non-missing source value.
+has_note / has_note_test / has_note_casi,True when the source row had a comment / code in that column

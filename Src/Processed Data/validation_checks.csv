@@ -1,0 +1,36 @@
+﻿check,result,detail
+Population: male + female = total in every row,PASS,0 mismatching rows
+"Population: (region, age band) key is unique",PASS,
+Population: every age-band label could be parsed,PASS,
+Regional: NUTS values in the file agree with the population file,PASS,0 conflicts
+"Regional: no duplicate (region, date) keys",PASS,
+Regional: complete region x day grid,PASS,0 missing region-days
+Regional: row count preserved,PASS,37401 vs 37401
+National: no duplicate dates,PASS,
+National: complete daily calendar,PASS,0 missing days
+National: row count preserved,PASS,1781 vs 1781
+Notes: row count preserved,PASS,1617 vs 1617
+Notes: one row per date,PASS,
+Regional and national date coverage is reported,PASS,"regional-only 0, national-only 0"
+Regional-national reconciliation completed (differences are diagnostic),PASS,"0 mismatching (day, column) pairs recorded; not forced to zero"
+Regional: only the logged corrections differ from the raw numbers,PASS,1 changed vs 1 logged
+National: only the logged corrections differ from the raw numbers,PASS,2 changed vs 2 logged
+Regional: counts are Int64,PASS,
+National: counts are Int64,PASS,
+Regional: region code is a 2-character string and exists in the dimension,PASS,
+"Regional: one name, one coordinate pair and one NUTS value per region",PASS,
+"Regional: no missing identifiers (code, name, NUTS, coordinates)",PASS,
+"Coordinates inside Italy (lat 35.4-47.2, long 6.5-18.6)",PASS,
+Regional model table: unique key,PASS,
+Regional model table: no negative daily values,PASS,0 negatives
+Regional model table: no infinite values,PASS,
+Regional model table: population denominators explicitly marked unusable pending source verification,PASS,
+National model table: unique key,PASS,
+National model table: no negative daily values,PASS,0 negatives
+National model table: no infinite values,PASS,
+National model table: population denominators explicitly marked unusable pending source verification,PASS,
+Regional model table: row count equals clean regional table,PASS,
+National model table: row count equals clean national table,PASS,
+Population-based rates remain disabled until source scope is verified,PASS,
+Every populated one-day-ahead target has a next-day date,PASS,
+"Target dates, when present, are exactly one day ahead",PASS,

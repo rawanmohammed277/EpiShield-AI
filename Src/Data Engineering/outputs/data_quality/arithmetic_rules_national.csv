@@ -1,0 +1,5 @@
+﻿rule,formula,checked,matching,mismatching,match_pct
+Hospitalised,totale_ospedalizzati = ricoverati_con_sintomi + terapia_intensiva,1781,1780,1,99.94
+Active positives,totale_positivi = totale_ospedalizzati + isolamento_domiciliare,1781,1779,2,99.89
+Total cases,totale_casi = totale_positivi + dimessi_guariti + deceduti,1781,1768,13,99.27
+Tests split,tamponi = tamponi_test_molecolare + tamponi_test_antigenico_rapido,1455,1455,0,100.0

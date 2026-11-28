@@ -1,0 +1,31 @@
+﻿column,dtype,missing_or_empty,missing_pct,blank_strings,unique_non_empty,example
+data,str,0,0.0,0,1781,2020-02-24T18:00:00
+stato,str,0,0.0,0,1,ITA
+codice_regione,str,0,0.0,0,21,13
+denominazione_regione,str,0,0.0,0,21,Abruzzo
+lat,str,0,0.0,0,21,42.35122196
+long,str,0,0.0,0,23,13.39843823
+ricoverati_con_sintomi,str,0,0.0,0,2677,0
+terapia_intensiva,str,0,0.0,0,598,0
+totale_ospedalizzati,str,0,0.0,0,2875,0
+isolamento_domiciliare,str,0,0.0,0,18218,0
+totale_positivi,str,0,0.0,0,18544,0
+variazione_totale_positivi,str,0,0.0,0,4522,0
+nuovi_positivi,str,0,0.0,0,4483,0
+dimessi_guariti,str,0,0.0,0,31750,0
+deceduti,str,0,0.0,0,12214,0
+casi_da_sospetto_diagnostico,str,33999,90.9,33999,2711,3113
+casi_da_screening,str,33999,90.9,33999,2205,171
+totale_casi,str,0,0.0,0,34039,0
+tamponi,str,0,0.0,0,36853,5
+casi_testati,str,1155,3.09,1155,35431,22424
+note,str,27562,73.69,27562,5318,pd-IT-0002
+ingressi_terapia_intensiva,str,5943,15.89,5943,69,8
+note_test,str,37204,99.47,37204,142,Al momento non è possibile definire il dato dei tamponi anti
+note_casi,str,32767,87.61,32767,3873,c'è stato un errore nella comunicazione dei positivi di ieri
+totale_positivi_test_molecolare,str,6846,18.3,6846,25195,38834
+totale_positivi_test_antigenico_rapido,str,6846,18.3,6846,23866,0
+tamponi_test_molecolare,str,6846,18.3,6846,28822,557650
+tamponi_test_antigenico_rapido,str,6846,18.3,6846,29638,617
+codice_nuts_1,str,6846,18.3,6846,5,ITF
+codice_nuts_2,str,6846,18.3,6846,21,ITF1

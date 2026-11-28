@@ -1,0 +1,43 @@
+﻿feature,type,meaning,how_computed
+target_next_day_new_cases,Target,New cases on the following day (t+1) for the same region,"groupby(region).shift(-1), only when target_date is exactly t+1"
+day,Time,Day of month,Extracted from date
+day_of_week,Time,Day of week; Monday=0 and Sunday=6,Extracted from date
+month,Time,Calendar month,Extracted from date
+quarter,Time,Calendar quarter,Extracted from date
+year,Time,Calendar year,Extracted from date
+is_weekend,Time,Whether the date is Saturday or Sunday,day_of_week >= 5
+cases_today,Current,Reported new cases on prediction date t,source_new_cases
+cases_lag_1,Lag,Reported new cases one day before t,groupby(region).shift(1)
+cases_lag_2,Lag,Reported new cases two days before t,groupby(region).shift(2)
+cases_lag_3,Lag,Reported new cases three days before t,groupby(region).shift(3)
+cases_lag_7,Lag,Reported new cases seven days before t,groupby(region).shift(7)
+cases_lag_14,Lag,Reported new cases fourteen days before t,groupby(region).shift(14)
+rolling_mean_7,Rolling,Mean of the latest 7 days including t,rolling(7).mean()
+rolling_mean_14,Rolling,Mean of the latest 14 days including t,rolling(14).mean()
+rolling_mean_30,Rolling,Mean of the latest 30 days including t,rolling(30).mean()
+rolling_std_7,Rolling,Standard deviation over the latest 7 days,rolling(7).std()
+rolling_max_7,Rolling,Maximum over the latest 7 days,rolling(7).max()
+daily_change,Additional,Difference between today's and yesterday's cases,cases_today - cases_lag_1
+growth_rate_7,Additional,Relative change between two consecutive 7-day means,(mean_7_t - mean_7_previous) / (abs(mean_7_previous) + 1)
+is_negative_source_correction,Data quality,Flag indicating a negative source daily value,new_cases < 0
+region_1,Region,One-hot indicator for region code 1,pandas.get_dummies(codice_regione)
+region_10,Region,One-hot indicator for region code 10,pandas.get_dummies(codice_regione)
+region_11,Region,One-hot indicator for region code 11,pandas.get_dummies(codice_regione)
+region_12,Region,One-hot indicator for region code 12,pandas.get_dummies(codice_regione)
+region_13,Region,One-hot indicator for region code 13,pandas.get_dummies(codice_regione)
+region_14,Region,One-hot indicator for region code 14,pandas.get_dummies(codice_regione)
+region_15,Region,One-hot indicator for region code 15,pandas.get_dummies(codice_regione)
+region_16,Region,One-hot indicator for region code 16,pandas.get_dummies(codice_regione)
+region_17,Region,One-hot indicator for region code 17,pandas.get_dummies(codice_regione)
+region_18,Region,One-hot indicator for region code 18,pandas.get_dummies(codice_regione)
+region_19,Region,One-hot indicator for region code 19,pandas.get_dummies(codice_regione)
+region_2,Region,One-hot indicator for region code 2,pandas.get_dummies(codice_regione)
+region_20,Region,One-hot indicator for region code 20,pandas.get_dummies(codice_regione)
+region_21,Region,One-hot indicator for region code 21,pandas.get_dummies(codice_regione)
+region_22,Region,One-hot indicator for region code 22,pandas.get_dummies(codice_regione)
+region_3,Region,One-hot indicator for region code 3,pandas.get_dummies(codice_regione)
+region_5,Region,One-hot indicator for region code 5,pandas.get_dummies(codice_regione)
+region_6,Region,One-hot indicator for region code 6,pandas.get_dummies(codice_regione)
+region_7,Region,One-hot indicator for region code 7,pandas.get_dummies(codice_regione)
+region_8,Region,One-hot indicator for region code 8,pandas.get_dummies(codice_regione)
+region_9,Region,One-hot indicator for region code 9,pandas.get_dummies(codice_regione)

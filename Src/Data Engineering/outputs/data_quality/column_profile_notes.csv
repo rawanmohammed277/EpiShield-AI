@@ -1,0 +1,3 @@
+﻿column,dtype,missing_or_empty,missing_pct,blank_strings,unique_non_empty,example
+data,str,0,0.0,0,1617,2020-03-07T17:00:00
+note,str,14,0.87,14,1593,La Provincia di Brescia ha comunicato dati parziali di 300 c
