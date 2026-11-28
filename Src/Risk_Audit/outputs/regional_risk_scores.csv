@@ -1,0 +1,22 @@
+﻿rank,date,denominazione_regione,risk_score,risk_level
+1,2025-01-01,Toscana,84.76,High
+2,2025-01-01,Friuli Venezia Giulia,74.76,Moderate
+3,2025-01-01,Abruzzo,72.38,Moderate
+4,2025-01-01,Veneto,69.29,Moderate
+5,2025-01-01,Bolzano,69.05,Moderate
+6,2025-01-01,Lombardia,63.1,Moderate
+7,2025-01-01,Puglia,62.38,Moderate
+8,2025-01-01,Marche,60.95,Moderate
+9,2025-01-01,Calabria,60.24,Moderate
+10,2025-01-01,Lazio,57.62,Moderate
+11,2025-01-01,Sicilia,53.45,Moderate
+12,2025-01-01,Trento,50.24,Moderate
+13,2025-01-01,Campania,49.52,Low
+14,2025-01-01,Emilia-Romagna,48.81,Low
+15,2025-01-01,Liguria,45.48,Low
+16,2025-01-01,Piemonte,43.57,Low
+17,2025-01-01,Basilicata,30.95,Low
+18,2025-01-01,Valle d'Aosta,27.74,Low
+19,2025-01-01,Sardegna,27.62,Low
+20,2025-01-01,Umbria,25.71,Low
+21,2025-01-01,Molise,22.38,Low
